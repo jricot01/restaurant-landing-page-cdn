@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+#section-7 {
+  overflow: hidden;
+}
+
+#header {
+  height: 1210px;
+  background: linear-gradient(
+    to right,
+
+    #fff5ec 0%,
+    #fff5ec 73%,
+    #fe043c 27%,
+    #fe043c 100%
+  );
+}
+
+@media not all and (min-width: 1195px) {
+  #header {
+    height: 924px;
+    width: fit-content;
+    background: linear-gradient(
+      to left right,
+
+      #fff5ec 0%,
+      #fff5ec 73%,
+      #fe043c 27%,
+      #fe043c 100%
+    );
+  }
+
+  body {
+    overscroll-behavior-x: none;
+  }
+}
+
+@media not all and (min-width: 555px) {
+  #header {
+    height: 1054px;
+    width: fit-content;
+    background: linear-gradient(
+      to left right,
+
+      #fff5ec 0%,
+      #fff5ec 73%,
+      #fe043c 27%,
+      #fe043c 100%
+    );
+  }
+}
+
+::-webkit-scrollbar {
+  width: 0.9em;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff5ec;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f8c195;
+  border-radius: 1em;
+}

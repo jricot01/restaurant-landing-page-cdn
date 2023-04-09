@@ -1,0 +1,2575 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {},
+          screens: {
+            sm: "480px",
+            md: "768px",
+            lg: "976px",
+            xl: "1440px",
+            mobile: "555px",
+            tablet: "1195px",
+          },
+        },
+      };
+    </script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 1st Section -->
+    <section
+      class="bg-[#FFF5EC] h-[1210x] max-mobile:h-[1054px] max-tablet:h-[924px]"
+    >
+      <div id="header" class="max-tablet:min-w-max max-mobile:min-w-max">
+        <!-- Nav Bar -->
+        <div class="flex justify-center">
+          <div
+            id="nav-bar"
+            class="w-[1652px] h-[108px] mt-5 text-center flex items-center justify-between max-tablet:w-[1132px] max-tablet:h-[64px] max-mobile:mx-4 max-mobile:w-[515px]"
+          >
+            <div class="inline-block">
+              <button
+                class="text-[72px] font-bold text-[#FE043C] max-mobile:text-5xl max-tablet:text-6xl"
+              >
+                expice
+              </button>
+            </div>
+
+            <div
+              class="text-[16px] font-normal text-[#2E266F] w-[490px] mr-[380px] flex justify-between max-tablet:hidden"
+            >
+              <button class="hover:text-[#FE043C] duration-600">
+                Menu One
+              </button>
+              <button class="hover:text-[#FE043C] duration-600">
+                Menu Two
+              </button>
+              <button class="hover:text-[#FE043C] duration-600">
+                Menu Three
+              </button>
+              <button class="hover:text-[#FE043C] duration-600">
+                Menu Four
+              </button>
+            </div>
+
+            <div class="inline-block">
+              <div class="flex items-center justify-between max-tablet:hidden">
+                <div
+                  class="flex justify-center items-center bg-white mr-[10px] h-[52px] w-[52px] rounded-full"
+                >
+                  <img
+                    class="inline-block h-[45px] w-[45px]"
+                    src="images\nav-icon\profile-iocn.png"
+                    alt="profile-icon"
+                  />
+                </div>
+                <div class="inline-block">
+                  <button class="text-white mr-2">User</button>
+                </div>
+                <div class="inline-block">
+                  <img
+                    class="w-[12px] h-[10px]"
+                    src="images/nav-icon/expand-down.png"
+                    alt="expand-down"
+                  />
+                </div>
+              </div>
+              <button
+                class="tablet:hidden max-tablet:visible flex items-center justify-between"
+              >
+                <img
+                  class="h-10"
+                  src="images/nav-icon/hamburger-menu.png"
+                  alt="hamburger menu"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Main Header -->
+        <div class="inline-block max-tablet:w-[640px] max-mobile:w-[470px]">
+          <div
+            class="inline-block h-[455px] w-[765px] ml-[120px] max-tablet:h-[376px] mt-20 max-tablet:ml-4 max-mobile:mt-4 max-mobile:h-auto max-mobile:w-[470px]"
+          >
+            <p
+              class="text-[200px] font-black text-[#F5EBE6] leading-[120px] -ml-[5px] max-tablet:text-[150px] max-mobile:text-[100px]"
+            >
+              Food
+            </p>
+            <p
+              class="text-[72px] w-[765px] text-[#2E266F] font-bold max-tablet:text-6xl max-tablet:w-[629px] max-mobile:text-3xl max-mobile:w-[340px]"
+            >
+              Discover Restaurant & Delicious Food
+            </p>
+
+            <div
+              class="w-[670px] h-[90px] bg-white flex items-center justify-between mt-5 max-tablet:w-[462px] max-tablet:mt-10 max-mobile:mt-7"
+            >
+              <div>
+                <input
+                  class="text-[18px] pl-[50px] h-[72px] w-[460px] outline-none max-tablet:w-[270px]"
+                  type="text"
+                  placeholder="Search Restaurant, Food"
+                />
+              </div>
+              <button
+                class="w-[200px] h-[72px] bg-[#FE043C] rounded-tl-[60px] font-semibold text-[30px] text-white mr-2 hover:bg-[#2E266F] duration-1000 max-tablet:w-[146px]"
+              >
+                GO
+              </button>
+            </div>
+          </div>
+
+          <div class="inline">
+            <div
+              class="w-[280px] h-[65px] bg-[#FE043C] flex items-center rounded-r-full pl-[50px] mt-[180px] max-tablet:mt-28 max-mobile:mt-12"
+            >
+              <img
+                class="w-[25px] h-[25px]"
+                src="images/nav-icon/location-icon.png"
+                alt="location-icon"
+              />
+              <p class="text-white text-[30px] font-medium ml-3">Rajshahi</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photos -->
+        <div
+          class="inline-flex -mt-9 relative max-tablet:z-30 max-mobile:block max-mobile:mt-5 max-mobile:ml-7 max-mobile:w-[502px]"
+        >
+          <div
+            class="inline relative z-50 -bottom-10 max-tablet:bottom-0 max-mobile:-bottom-4 max-mobile:inline-block max-mobile:-right-5"
+          >
+            <img
+              src="images/header-photos/salad-1.png"
+              class="h-[870px] w-[878px] max-tablet:h-[545px] max-tablet:w-[550px] max-mobile:h-[502px] max-mobile:w-[507px]"
+              alt="salmon-salad"
+            />
+          </div>
+          <div
+            class="inline absolute bottom-[260px] z-40 max-tablet:bottom-[280px] max-mobile:-right-28 max-mobile:top-0"
+          >
+            <img
+              src="images/green-photos/single-lettuce.png"
+              class="h-[584px] w-[900px] -rotate-90 object-center max-tablet:h-[300px] max-mobile:h-[300px] max-mobile:w-[500px]"
+              alt="single-lettuce"
+            />
+          </div>
+
+          <!-- Img Nav Buttons -->
+          <div
+            class="absolute -bottom-5 right-0 z-50 w-36 flex justify-between max-tablet:mr-8 max-mobile:bottom-4 max-mobile:w-28 max-mobile:mr-0"
+          >
+            <button
+              class="w-[50px] h-[50px] border-white border-[3px] rounded-full max-mobile:w-[40px] max-mobile:h-[40px]"
+            >
+              <img
+                class="w-10 max-mobile:w-8"
+                src="images/nav-icon/left-arrow.png"
+                alt="left-arrow"
+              />
+            </button>
+
+            <button
+              class="w-[50px] h-[50px] border-white border-[3px] rounded-full max-mobile:w-[40px] max-mobile:h-[40px]"
+            >
+              <img
+                class="w-10 max-mobile:w-8"
+                src="images/nav-icon/right-arrow.png"
+                alt="right-arrow"
+              />
+            </button>
+          </div>
+
+          <!-- Grid -->
+          <div
+            class="inline-block pt-[70px] pl-5 absolute left-[12px] top-[0px] z-30 max-tablet:-left-10 max-tablet:-top-28 max-mobile:h-[409px] max-mobile:block max-mobile:top-0 max-mobile:left-0 max-mobile:pt-0"
+          >
+            <div
+              class="grid gap-[26px] grid-cols-9 grid-rows-20 max-tablet:gap-5 max-mobile:gap-5"
+            >
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:h-[9px] max-tablet:w-[9px] max-mobile:h-[8.56px] max-mobile:w-[8.56px]"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:hidden"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:hidden"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:hidden"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:hidden"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:hidden"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:hidden"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:hidden"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:hidden"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:hidden"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:hidden"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:hidden"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:hidden"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:hidden"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:hidden"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:hidden"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:hidden"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:hidden"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:hidden"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:hidden"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:hidden"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:hidden"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:hidden"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:hidden"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:hidden"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:hidden"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:hidden"
+              ></div>
+              <div
+                class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-tablet:hidden"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2nd Section -->
+    <section
+      class="bg-[#FFF5EC] h-[1159px] max-tablet:h-[944px] max-mobile:h-[1538px]"
+    >
+      <!-- First Section -->
+      <div class="flex max-tablet:inline-flex max-mobile:block">
+        <div class="flex pt-8 mr-36 max-tablet:mr-20 max-tablet:w-[698px]">
+          <div
+            class="h-[140px] w-[25px] bg-[#FE043C] ml-32 max-tablet:ml-8 max-mobile:ml-4 max-mobile:h-[100px] max-mobile:w-[12px]"
+          ></div>
+          <h1
+            class="text-[48px] font-medium text-[#2E266F] w-[636px] ml-8 max-mobile:text-4xl max-mobile:w-[464px] max-mobile:ml-5 max-mobile:selfcenter"
+          >
+            Some Top Restaurant For Dining In Or Take Away!
+          </h1>
+        </div>
+
+        <div
+          class="inline-block w-[609px] text-[14px] text-[#707070] self-end max-tablet:mt-10 max-tablet:w-[369px] max-tablet:ml-[52px] max-mobile:mt-3"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est,
+          adipiscing cursus auctor eget sed phasellus senectus. Ut tellus donec
+          vestibulum tristique leo bibendum in a, tincidunt. Volutpat metus id
+          amet, nam hac magna accumsan. Nascetur ac tortor purus ultrices morbi
+          tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est,
+          adipiscing cursus auctor eget sed.
+        </div>
+      </div>
+
+      <!-- Grid -->
+      <div class="inline-block pt-[70px] pl-5 max-tablet:pt-10">
+        <div
+          class="grid gap-[26px] grid-cols-9 grid-rows-2 max-mobile:grid-rows-1"
+        >
+          <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+          <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+          <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+          <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+          <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+          <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+          <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+          <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+          <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+          <div
+            class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-mobile:hidden"
+          ></div>
+          <div
+            class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-mobile:hidden"
+          ></div>
+          <div
+            class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-mobile:hidden"
+          ></div>
+          <div
+            class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-mobile:hidden"
+          ></div>
+          <div
+            class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-mobile:hidden"
+          ></div>
+          <div
+            class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-mobile:hidden"
+          ></div>
+          <div
+            class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-mobile:hidden"
+          ></div>
+          <div
+            class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-mobile:hidden"
+          ></div>
+          <div
+            class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] max-mobile:hidden"
+          ></div>
+        </div>
+      </div>
+
+      <!-- Cards -->
+      <div
+        id="cards"
+        class="mt-5 flex max-mobile:flex max-mobile:justify-center max-mobile:mt-0"
+      >
+        <div class="flex max-mobile:block">
+          <!-- First Card -->
+          <div
+            class="flex w-[639px] h-[636px] rounded-[20px] mr-10 max-tablet:w-[494px] max-tablet:h-[493px] max-tablet:mr-4 max-mobile:flex max-mobile:m-0 max-mobile:mb-7"
+          >
+            <div
+              class="w-[639px] h-[636px] static max-tablet:w-[494px] max-tablet:h-[493px]"
+            >
+              <img
+                class="w-[639px] h-[636px] rounded-[20px] object-bottom object-cover overflow-hidden max-tablet:w-[494px] max-tablet:h-[493px]"
+                src="images/header-photos/pizza-1.jpg"
+                alt="pizza-1"
+              />
+            </div>
+
+            <div class="self-end absolute">
+              <div
+                class="inline-block h-[253px] w-[639px] bg-[rgba(254,4,58,0.65)] text-white rounded-b-[20px] border-0 self-end relative max-tablet:w-[494px] max-tablet:h-[199px]"
+              >
+                <div
+                  class="pl-[60px] pt-[30px] h-[131px] w-[450px] inline-block max-tablet:pt-5"
+                >
+                  <h1 class="font-bold text-2xl pb-5">Fire Water</h1>
+                  <p class="text-[14px] pb-5 max-tablet:hidden">
+                    We are all about we are all about to the fullest and all
+                    content dining out or in dining out or in!
+                  </p>
+
+                  <p
+                    class="text-[14px] pb-5 hidden max-tablet:inline-flex visible"
+                  >
+                    We are all about we are all about to the <br />
+                    and all content dining out or <br />
+                    in dining out or in!
+                  </p>
+
+                  <div class="flex items-center">
+                    <img
+                      class="h-[25px]"
+                      src="images/nav-icon/location-icon.png"
+                      alt="location-icon"
+                    />
+                    <p class="text-[14px]">New Market</p>
+                  </div>
+                </div>
+
+                <div
+                  class="h-[58px] w-[208px] bg-white rounded-l-full inline-block justify-end absolute bottom-9 -right-[1px] max-tablet:w-[160px] max-tablet:h-[45px] max-tablet:bottom-7"
+                >
+                  <button
+                    class="h-[58px] w-[208px] rounded-l-full text-[#fe043c] text-base max-tablet:w-[160px] max-tablet:h-[45px]"
+                  >
+                    Book Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Second Card -->
+          <div
+            class="flex w-[639px] h-[636px] rounded-[20px] relative max-tablet:w-[494px] max-tablet:h-[493px]"
+          >
+            <div
+              class="w-[639px] h-[636px] static max-tablet:w-[494px] max-tablet:h-[493px] max-mobile:z-40"
+            >
+              <img
+                class="w-[639px] h-[636px] rounded-[20px] object-bottom object-cover overflow-hidden max-tablet:w-[494px] max-tablet:h-[493px]"
+                src="images/header-photos/burger-1.jpg"
+                alt="burger-1"
+              />
+            </div>
+
+            <div class="self-end absolute">
+              <div
+                class="inline-block h-[253px] w-[639px] bg-[rgba(254,4,58,0.65)] text-white rounded-b-[20px] border-0 self-end relative max-tablet:w-[494px] max-tablet:h-[199px] max-mobile:z-40"
+              >
+                <div
+                  class="pl-[60px] pt-[30px] h-[131px] w-[450px] inline-block max-tablet:pt-5"
+                >
+                  <h1 class="font-bold text-2xl pb-5">The Wonton</h1>
+                  <p class="text-[14px] pb-5 max-tablet:hidden">
+                    We are all about we are all about to the fullest and all
+                    content dining out or in dining out or in!
+                  </p>
+
+                  <p
+                    class="text-[14px] pb-5 hidden max-tablet:inline-flex visible"
+                  >
+                    We are all about we are all about to the <br />
+                    and all content dining out or <br />
+                    in dining out or in!
+                  </p>
+
+                  <div class="flex items-center">
+                    <img
+                      class="h-[25px]"
+                      src="images/nav-icon/location-icon.png"
+                      alt="location-icon"
+                    />
+                    <p class="text-[14px]">New Market</p>
+                  </div>
+                </div>
+
+                <div
+                  class="h-[58px] w-[208px] bg-white rounded-l-full inline-block justify-end absolute bottom-9 -right-[1px] max-tablet:w-[160px] max-tablet:h-[45px] max-tablet:bottom-7"
+                >
+                  <button
+                    class="h-[58px] w-[208px] rounded-l-full text-[#fe043c] text-base max-tablet:w-[160px] max-tablet:h-[45px]"
+                  >
+                    Book Now
+                  </button>
+                </div>
+              </div>
+
+              <!-- Grid -->
+              <div
+                class="inline-block pt-[70px] pl-5 absolute -right-[32px] -bottom-[32px] max-tablet:-right-[65px] max-tablet:-bottom-[65px] max-mobile:-right-[23px] max-mobile:-bottom-[23px] max-mobile:z-0"
+              >
+                <div
+                  class="grid gap-[26px] grid-cols-1 grid-rows-11 max-tablet:grid-cols-2 max-mobile:-z-20"
+                >
+                  <div
+                    class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"
+                  ></div>
+                  <div
+                    class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"
+                  ></div>
+                  <div
+                    class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"
+                  ></div>
+                  <div
+                    class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"
+                  ></div>
+                  <div
+                    class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"
+                  ></div>
+                  <div
+                    class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"
+                  ></div>
+                  <div
+                    class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"
+                  ></div>
+                  <div
+                    class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"
+                  ></div>
+                  <div
+                    class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"
+                  ></div>
+                  <div
+                    class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"
+                  ></div>
+                  <div
+                    class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"
+                  ></div>
+                  <!--  -->
+                  <div
+                    class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] hidden max-tablet:inline"
+                  ></div>
+                  <div
+                    class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] hidden max-tablet:inline"
+                  ></div>
+                  <div
+                    class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] hidden max-tablet:inline"
+                  ></div>
+                  <div
+                    class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] hidden max-tablet:inline"
+                  ></div>
+                  <div
+                    class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] hidden max-tablet:inline"
+                  ></div>
+                  <div
+                    class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] hidden max-tablet:inline"
+                  ></div>
+                  <div
+                    class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] hidden max-tablet:inline"
+                  ></div>
+                  <div
+                    class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] hidden max-tablet:inline"
+                  ></div>
+                  <div
+                    class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] hidden max-tablet:inline"
+                  ></div>
+                  <div
+                    class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] hidden max-tablet:inline"
+                  ></div>
+                  <div
+                    class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] hidden max-tablet:inline"
+                  ></div>
+                </div>
+              </div>
+
+              <div
+                class="inline-block pt-[70px] pl-5 absolute -right-[32px] -bottom-[32px] max-tablet:-right-[65px] max-tablet:-bottom-[65px] max-mobile:-right-[23px] max-mobile:-bottom-[23px]"
+              >
+                <div
+                  class="grid gap-[26px] grid-cols-9 grid-rows-1 max-tablet:grid-rows-2"
+                >
+                  <div
+                    class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"
+                  ></div>
+                  <div
+                    class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"
+                  ></div>
+                  <div
+                    class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"
+                  ></div>
+                  <div
+                    class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"
+                  ></div>
+                  <div
+                    class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"
+                  ></div>
+                  <div
+                    class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"
+                  ></div>
+                  <div
+                    class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"
+                  ></div>
+                  <div
+                    class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"
+                  ></div>
+                  <!--  -->
+                  <div
+                    class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] hidden max-tablet:inline"
+                  ></div>
+                  <div
+                    class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] hidden max-tablet:inline"
+                  ></div>
+                  <div
+                    class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] hidden max-tablet:inline"
+                  ></div>
+                  <div
+                    class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] hidden max-tablet:inline"
+                  ></div>
+                  <div
+                    class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] hidden max-tablet:inline"
+                  ></div>
+                  <div
+                    class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] hidden max-tablet:inline"
+                  ></div>
+                  <div
+                    class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] hidden max-tablet:inline"
+                  ></div>
+                  <div
+                    class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6] hidden max-tablet:inline"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- See More Button -->
+          <div
+            class="flex items-center z-50 max-mobile:justify-center max-mobile:mt-12"
+          >
+            <div
+              class="flex items-center pl-24 max-tablet:pl-12 max-mobile:pl-0"
+            >
+              <hr class="w-[58px] border-2 border-[#FE043C] bg-[#FE043C]" />
+              <div class="rounded-full flex">
+                <button
+                  class="h-[40px] w-[40px] bg-[#FE043C] rounded-full flex justify-center items-center relative"
+                >
+                  <img
+                    class="h-[25px]"
+                    src="images/nav-icon/foward-icon.png"
+                    alt="foward-icon"
+                  />
+                  <p
+                    class="text-sm w-[100px] text-[#FE043C] inline-block absolute -bottom-9"
+                  >
+                    See More
+                  </p>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3rd Section -->
+    <section
+      class="bg-[#FFEDDE] h-[1090px] z-[20] flex justify-center relative max-tablet:h-[742px] max-tablet:overflow-x-hidden max-mobile:h-[502px] max-mobile:overflow-hidden"
+    >
+      <!-- Image 1 -->
+      <div
+        class="flex h-[1090px] w-[1090px] absolute z-30 -left-[400px] items-center max-tablet:h-[742px] max-tablet:w-[742px] max-mobile:h-[502px] max-mobile:-left-[450px]"
+      >
+        <img
+          class="-rotate-90 h-[900px] object-cover max-tablet:h-[700px] max-tablet:w-[742px] max-mobile:h-[400px]"
+          src="images/green-photos/single-lettuce.png"
+          alt="single-lettuce"
+        />
+      </div>
+
+      <!-- Image 2 -->
+      <div
+        class="flex h-[1090px] w-[450px] absolute z-30 -right-[180px] items-center object-left-top max-tablet:h-[742px] max-tablet:w-[300px] max-tablet:-right-[100px] max-mobile:-right-[220px] max-mobile:h-[200px] max-mobile:bottom-24"
+      >
+        <img
+          class="-rotate-[60deg] object-contain"
+          src="images/green-photos/whole-lettuce.png"
+          alt="whole-lettuce"
+        />
+      </div>
+
+      <!-- Advance Booking Card -->
+      <div
+        class="bg-[#FFEDDE] h-[1090px] flex justify-center items-center relative max-tablet:h-[742px] max-mobile:h-[502px]"
+      >
+        <!-- Grid -->
+        <div
+          class="absolute top-[189px] -right-[70px] z-[9] max-mobile:hidden"
+          id="grid"
+        >
+          <div
+            class="grid gap-[26px] grid-cols-9 grid-rows-11"
+            id="section-3-grid"
+          >
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+          </div>
+        </div>
+
+        <!-- Card -->
+        <div
+          class="bg-white w-[1230px] h-[560px] flex justify-center items-center relative z-[10] max-tablet:w-[950px] max-tablet:h-[417px] max-mobile:w-[458px] max-mobile:h-[333px]"
+        >
+          <div class="justify-center">
+            <div class="flex justify-center mb-8">
+              <hr
+                class="w-[230px] border-[7.5px] border-[#FE043C] bg-[#FE043C] max-mobile:w-[150px] max-mobile:border-[5px]"
+              />
+            </div>
+            <div class="flex justify-center mb-16 max-mobile:mb-11">
+              <p
+                class="text-[#2E266F] text-4xl font-medium max-mobile:text-2xl"
+              >
+                Advance Booking
+              </p>
+            </div>
+            <div
+              class="w-[670px] h-[90px] bg-white flex items-center justify-between mb-16 shadow-[0_0_60px_0px_rgba(0,0,0,0.3)] shadow-[#ffdcbf] max-tablet:w-[540px] max-tablet:h-[90px] max-mobile:w-[286px] max-mobile:h-[51px]"
+            >
+              <div>
+                <input
+                  class="text-[18px] pl-[50px] h-[72px] w-[460px] outline-none max-tablet:w-[390px] max-mobile:w-[170px] max-mobile:h-[51px] max-mobile:text-sm max-mobile:pl-[10px]"
+                  type="text"
+                  placeholder="Search Restaurant"
+                />
+              </div>
+              <button
+                class="w-[200px] h-[72px] bg-[#FE043C] font-semibold text-[30px] text-white mr-2 hover:bg-[#2E266F] duration-1000 max-tablet:w-[128px] max-tablet:h-[62px] max-mobile:w-[80px] max-mobile:h-[40px] max-mobile:text-base"
+              >
+                GO
+              </button>
+            </div>
+
+            <div
+              class="flex justify-center gap-x-20 max-mobile:gap-7"
+              id="drop-down"
+            >
+              <div class="justify-center">
+                <div class="flex justify-center">
+                  <p class="text-base text-[#2E266F] pr-1">Date</p>
+                  <img
+                    class="w-[16px]"
+                    src="images/nav-icon/sort-down-icon.png"
+                    alt="sort-down-icon"
+                  />
+                </div>
+                <div>
+                  <p class="text-base text-[#4D4683]">23-09-2020</p>
+                </div>
+              </div>
+
+              <div class="justify-center">
+                <div class="flex justify-center">
+                  <p class="text-base text-[#2E266F] pr-1">Time</p>
+                  <img
+                    class="w-[16px]"
+                    src="images/nav-icon/sort-down-icon.png"
+                    alt="sort-down-icon"
+                  />
+                </div>
+                <div>
+                  <p class="text base text-[#4D4683]">5:00 PM</p>
+                </div>
+              </div>
+
+              <div class="justify-center">
+                <div class="flex justify-center">
+                  <p class="text-base text-[#2E266F] pr-1">Guests</p>
+                  <img
+                    class="w-[16px]"
+                    src="images/nav-icon/sort-down-icon.png"
+                    alt="sort-down-icon"
+                  />
+                </div>
+                <div>
+                  <p class="text base text-[#4D4683]">3 People</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="absolute z-[67] -bottom-[76px] left-[52px] max-mobile:-bottom-[62px] max-mobile:left-0"
+            id="grid"
+          >
+            <div
+              class="grid gap-[26px] grid-cols-9 grid-rows-2"
+              id="section-3-grid"
+            >
+              <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+              <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+              <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+              <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+              <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+              <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+              <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+              <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+              <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+              <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+              <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+              <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+              <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+              <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+              <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+              <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+              <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+              <div class="h-[12px] w-[12px] rounded-full bg-[#E6E6E6]"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4th Section -->
+    <section class="bg-[#FFF5EC] max-tablet:h-[965px] max-mobile:h-[1426px]">
+      <div
+        class="flex pt-[145px] pb-[130px] max-tablet:pt-[100px] max-tablet:pb-[118px] max-mobile:block max-mobile:pt-[60px] max-mobile:pb-7"
+      >
+        <div
+          class="flex items-center pt-8 mr-36 max-tablet:mr-28 max-tablet:pt-0"
+        >
+          <div
+            class="h-[140px] w-[25px] bg-[#FE043C] ml-32 max-tablet:ml-8 max-mobile:ml-4 max-mobile:w-3 max-mobile:h-[100px]"
+          ></div>
+          <h1
+            class="text-[48px] font-medium text-[#2E266F] w-[636px] ml-8 max-tablet:w-[310px] max-mobile:ml-5"
+          >
+            Our Services
+          </h1>
+        </div>
+
+        <div
+          class="inline-block w-[609px] text-[14px] text-[#707070] self-end max-tablet:self-center max-mobile:ml-[49px] max-mobile:mt-3 max-mobile:w-[464px]"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est,
+          adipiscing cursus auctor eget sed phasellus senectus. Ut tellus donec
+          vestibulum tristique leo bibendum in a, tincidunt. Volutpat metus id
+          amet, nam hac magna accumsan. Nascetur ac tortor purus ultrices morbi
+          tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est,
+          adipiscing cursus auctor eget sed.
+        </div>
+      </div>
+
+      <div class="bg-[#FFF5EC] h-[962px] relative max-tablet:h-[612px]">
+        <!-- Grid -->
+        <div
+          class="flex h-[962px] justify-center max-tablet:h-[612px] max-tablet:relative max-tablet:-right-[-28px] max-mobile:hidden"
+          id="grid"
+        >
+          <div
+            class="grid gap-[70px] grid-cols-12 grid-rows-6 max-tablet:gap-[48px]"
+            id="section-4-grid"
+          >
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+          </div>
+
+          <div
+            class="grid gap-[70px] grid-cols-6 grid-rows-6 pl-[70px] max-tablet:gap-[48px] max-tablet:pl-[48px]"
+            id="section-4-grid"
+          >
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+          </div>
+
+          <div
+            class="grid gap-[70px] grid-cols-6 grid-rows-6 pl-[70px] max-tablet:gap-[48px] max-tablet:pl-[48px]"
+            id="section-4-grid"
+          >
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+            <div class="h-[8px] w-[8px] rounded-full bg-[#E6E6E6]"></div>
+          </div>
+        </div>
+
+        <!-- Interview Card -->
+        <div
+          class="h-[370px] w-[370px] bg-[#FFEDDE] flex items-center justify-center absolute top-[110px] left-[114px] max-tablet:h-[271px] max-tablet:w-[275px] max-tablet:left-8 max-tablet:top-[31px] max-mobile:left-4 max-mobile:top-0"
+          id="interview-icon"
+        >
+          <div class="">
+            <img
+              class="h-[200px] w-[200px] max-tablet:h-[112px] max-tablet:w-[112px]"
+              src="images/services-icon/interview-icon.png"
+              alt="interview-icon"
+            />
+          </div>
+
+          <div class="absolute -right-[340px] max-mobile:-right-[240px]">
+            <div class="pb-3 flex">
+              <p class="text-2xl text-[#2E266F] font-medium max-mobile:">
+                Advance Table<br />
+                Booking
+              </p>
+              <div
+                class="w-[74px] h-1 bg-[#FE043C] absolute right-10 bottom-[72px] rounded-r-full max-mobile:right-3"
+              ></div>
+
+              <img
+                class="h-7 absolute right-[235px] bottom-[60px] rounded-r-full max-mobile:right-52 max-mobile:object-cover max-mobile:w-[73px] max-mobile:object-left"
+                src="images/nav-icon/long-l-arrow.png"
+                alt="long-left-arrow"
+              />
+            </div>
+
+            <p class="max-mobile:text-sm">
+              Lorem ipsum dolor sit amet,<br />consectetur adipiscing elit.
+            </p>
+          </div>
+        </div>
+
+        <!-- Utensils Card -->
+        <div
+          class="h-[370px] w-[370px] bg-[#FFEDDE] flex items-center justify-center absolute bottom-[111px] left-[580px] max-tablet:h-[271px] max-tablet:w-[275px] max-tablet:left-[320px] max-tablet:bottom-[31px] max-mobile:left-[260px] max-mobile:top-[305px]"
+          id="utensils-icon"
+        >
+          <div>
+            <img
+              class="h-[200px] w-[200px] max-tablet:h-[112px] max-tablet:w-[112px]"
+              src="images/services-icon/utensils-icon.png"
+              alt="utensils-icon"
+            />
+          </div>
+
+          <div class="absolute -left-[275px] max-mobile:-left-60">
+            <div class="pb-3 flex">
+              <p class="text-2xl text-right text-[#2E266F] font-medium">
+                Food For Free<br />
+                24/7
+              </p>
+              <div
+                class="w-[96px] h-1 bg-[#FE043C] absolute right-32 bottom-[72px] rounded-l-full max-mobile:right-24"
+              ></div>
+
+              <div>
+                <img
+                  class="h-7 absolute -right-[85px] bottom-[60px] rounded-r-full max-mobile:-right-28"
+                  src="images/nav-icon/long-r-arrow.png"
+                  alt="long-right-arrow"
+                />
+              </div>
+            </div>
+
+            <p class="max-mobile:text-sm">
+              Lorem ipsum dolor sit amet,<br />consectetur adipiscing elit.
+            </p>
+          </div>
+        </div>
+
+        <!-- Delivery Card -->
+        <div
+          class="max-mobile:flex max-mobile:justify-center max-mobile:w-screen"
+        >
+          <div
+            class="h-[740px] w-[740px] bg-[#FFEDDE] flex justify-center absolute top-[111px] right-[114px] max-tablet:h-[550px] max-tablet:w-[462px] max-tablet:top-[31px] max-tablet:right-8 max-mobile:top-[610px] max-mobile:inset-x-auto"
+          >
+            <div class="inline-block mt-36">
+              <div
+                class="max-tablet:flex max-tablet:justify-center max-tablet:mb-8"
+              >
+                <img
+                  class="h-[350px] max-tablet:h-[160px]"
+                  src="images/services-icon/scooter-icon.png"
+                  alt="scooter-icon"
+                />
+              </div>
+
+              <div class="flex justify-center pb-5 -mt-10">
+                <p
+                  class="text-2xl font-medium text-[#2E266F] w-[244px] text-center"
+                >
+                  Free Home Delivery At Your Door Steps
+                </p>
+              </div>
+
+              <div class="flex justify-center pb-5">
+                <p
+                  class="text-sm font-regular text-[#707070] w-[199px] text-center"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elite.
+                </p>
+              </div>
+
+              <div class="flex justify-center">
+                <hr class="w-48 h-[6px] border bg-[#FE043C]" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5th Section -->
+    <section
+      class="bg-[#FFF5EC] h-[1664px] flex justify-center pt-[150px] max-tablet:pt-24 max-tablet:h-[2119px] max-mobile:h-[3743px] max-mobile:pt-20"
+    >
+      <div class="">
+        <div>
+          <div class="flex justify-center pb-[30px] max-mobile:pt-3">
+            <h1
+              class="text-5xl font-medium text-[#2E266F] text-center max-mobile:text-4xl"
+            >
+              Explore Our Foods
+            </h1>
+          </div>
+
+          <div class="flex justify-center pb-[60px] max-mobile:pb-7">
+            <p
+              class="text-2xl w-[1050px] text-center max-tablet:text-sm max-tablet:hidden max-mobile:inline-block max-mobile:w-[514px]"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est,
+              adipiscing cursus auctor eget sed phasellus senectus. Ut tellus
+              donec vestibulum tristique leo bibendum in a, tincidunt. Volutpat
+              metus id amet.
+            </p>
+
+            <p
+              class="text-[14px] pb-5 hidden max-tablet:inline-flex max-tablet:visible max-tablet:text-center max-mobile:hidden"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est,
+              adipiscing cursus auctor <br />
+              eget sed phasellus senectus. Ut tellus donec vestibulum tristique
+              leo bibendum in a, <br />
+              tincidunt. Volutpat metus id amet.
+            </p>
+          </div>
+        </div>
+
+        <!-- Cards -->
+        <div
+          class="inline-grid grid-cols-3 grid-rows-2 gap-x-[30px] gap-y-[60px] max-tablet:grid-cols-2 max-tablet:grid-rows-3 max-tablet:gap-y-10 max-mobile:grid-cols-1 max-mobile:grid-rows-6 max-mobile:gap-y-[30px]"
+        >
+          <!-- Card 1 -->
+          <div class="w-[530px]">
+            <div
+              class="flex w-[530px] h-[552px] rounded-[20px] mr-10 shadow-2xl shadow-slate-200"
+            >
+              <div class="w-[530px] h-[552px] static">
+                <img
+                  class="w-[530px] h-[552px] rounded-[20px] object-bottom object-cover"
+                  src="images/foods/pic-1.jpg"
+                  alt="pic-1"
+                />
+              </div>
+
+              <div class="self-end absolute">
+                <div
+                  class="inline-block h-[149px] w-[530px] bg-white text-white rounded-b-[20px] self-end relative"
+                >
+                  <div
+                    class="px-[30px] pt-[30px] h-[131px] w-[450px] inline-block"
+                  >
+                    <div class="flex w-[450px] justify-between">
+                      <h1 class="font-bold text-2xl pb-5 text-[#2E266F]">
+                        Hand Sandwich
+                      </h1>
+                      <h1 class="font-bold text-2xl pb-5 text-[#FE043C]">
+                        $10.25
+                      </h1>
+                    </div>
+
+                    <p class="text-[14px] text-[#707070] pb-5">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Est, adipiscing.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="w-[530px]">
+            <div
+              class="flex w-[530px] h-[552px] rounded-[20px] mr-10 shadow-2xl shadow-slate-200"
+            >
+              <div class="w-[530px] h-[552px] static">
+                <img
+                  class="w-[530px] h-[552px] rounded-[20px] object-bottom object-cover"
+                  src="images/foods/pic-2.jpg"
+                  alt="pic-2"
+                />
+              </div>
+
+              <div class="self-end absolute">
+                <div
+                  class="inline-block h-[149px] w-[530px] bg-white text-white rounded-b-[20px] self-end relative"
+                >
+                  <div
+                    class="px-[30px] pt-[30px] h-[131px] w-[450px] inline-block"
+                  >
+                    <div class="flex w-[450px] justify-between">
+                      <h1 class="font-bold text-2xl pb-5 text-[#2E266F]">
+                        Truffle Burger
+                      </h1>
+                      <h1 class="font-bold text-2xl pb-5 text-[#FE043C]">
+                        $12.99
+                      </h1>
+                    </div>
+
+                    <p class="text-[14px] text-[#707070] pb-5">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Est, adipiscing.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="w-[530px]">
+            <div
+              class="flex w-[530px] h-[552px] rounded-[20px] mr-10 shadow-2xl shadow-slate-200"
+            >
+              <div class="w-[530px] h-[552px] static">
+                <img
+                  class="w-[530px] h-[552px] rounded-[20px] object-bottom object-cover"
+                  src="images/foods/pic-3.jpg"
+                  alt="pizza-3"
+                />
+              </div>
+
+              <div class="self-end absolute">
+                <div
+                  class="inline-block h-[149px] w-[530px] bg-white text-white rounded-b-[20px] self-end relative"
+                >
+                  <div
+                    class="px-[30px] pt-[30px] h-[131px] w-[450px] inline-block"
+                  >
+                    <div class="flex w-[450px] justify-between">
+                      <h1 class="font-bold text-2xl pb-5 text-[#2E266F]">
+                        Sea Salt Fries
+                      </h1>
+                      <h1 class="font-bold text-2xl pb-5 text-[#FE043C]">
+                        $5.49
+                      </h1>
+                    </div>
+
+                    <p class="text-[14px] text-[#707070] pb-5">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Est, adipiscing.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="w-[530px]">
+            <div
+              class="flex w-[530px] h-[552px] rounded-[20px] mr-10 shadow-2xl shadow-slate-200"
+            >
+              <div class="w-[530px] h-[552px] static">
+                <img
+                  class="w-[530px] h-[552px] rounded-[20px] object-bottom object-cover"
+                  src="images/foods/pic-4.jpg"
+                  alt="pic-4"
+                />
+              </div>
+
+              <div class="self-end absolute">
+                <div
+                  class="inline-block h-[149px] w-[530px] bg-white text-white rounded-b-[20px] self-end relative"
+                >
+                  <div
+                    class="px-[30px] pt-[30px] h-[131px] w-[450px] inline-block"
+                  >
+                    <div class="flex w-[450px] justify-between">
+                      <h1 class="font-bold text-2xl pb-5 text-[#2E266F]">
+                        Crispy Sandwich Combo
+                      </h1>
+                      <h1 class="font-bold text-2xl pb-5 text-[#FE043C]">
+                        $13.25
+                      </h1>
+                    </div>
+
+                    <p class="text-[14px] text-[#707070] pb-5">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Est, adipiscing.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="w-[530px]">
+            <div
+              class="flex w-[530px] h-[552px] rounded-[20px] mr-10 shadow-2xl shadow-slate-200"
+            >
+              <div class="w-[530px] h-[552px] static">
+                <img
+                  class="w-[530px] h-[552px] rounded-[20px] object-bottom object-cover"
+                  src="images/foods/pic-5.jpg"
+                  alt="pic-5"
+                />
+              </div>
+
+              <div class="self-end absolute">
+                <div
+                  class="inline-block h-[149px] w-[530px] bg-white text-white rounded-b-[20px] self-end relative"
+                >
+                  <div
+                    class="px-[30px] pt-[30px] h-[131px] w-[450px] inline-block"
+                  >
+                    <div class="flex w-[450px] justify-between">
+                      <h1 class="font-bold text-2xl pb-5 text-[#2E266F]">
+                        Apple Pie Slice
+                      </h1>
+                      <h1 class="font-bold text-2xl pb-5 text-[#FE043C]">
+                        $3.99
+                      </h1>
+                    </div>
+
+                    <p class="text-[14px] text-[#707070] pb-5">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Est, adipiscing.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="w-[530px]">
+            <div
+              class="flex w-[530px] h-[552px] rounded-[20px] mr-10 shadow-2xl shadow-slate-200"
+            >
+              <div class="w-[530px] h-[552px] static">
+                <img
+                  class="w-[530px] h-[552px] rounded-[20px] object-bottom object-cover"
+                  src="images/foods/pic-6.jpg"
+                  alt="pic-6"
+                />
+              </div>
+
+              <div class="self-end absolute">
+                <div
+                  class="inline-block h-[149px] w-[530px] bg-white text-white rounded-b-[20px] self-end relative"
+                >
+                  <div
+                    class="px-[30px] pt-[30px] h-[131px] w-[450px] inline-block"
+                  >
+                    <div class="flex w-[450px] justify-between">
+                      <h1 class="font-bold text-2xl pb-5 text-[#2E266F]">
+                        Hand Baked Cookies
+                      </h1>
+                      <h1 class="font-bold text-2xl pb-5 text-[#FE043C]">
+                        1.29
+                      </h1>
+                    </div>
+
+                    <p class="text-[14px] text-[#707070] pb-5">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Est, adipiscing.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6th Section -->
+    <section
+      class="bg-[#FFEDDE] h-[1090px] flex items-center justify-between max-tablet:h-[1009px] max-mobile:h-[895px] max-mobile:inline-block max-mobile:w-screen"
+    >
+      <div class="max-mobile:pt-[60px]">
+        <div class="flex items-center">
+          <div
+            class="h-[140px] w-[25px] bg-[#FE043C] ml-32 max-tablet:ml-8 max-mobile:ml-4 max-mobile:h-[100px] max-mobile:w-[12px]"
+          ></div>
+          <h1
+            class="text-[48px] font-medium text-[#2E266F] w-[636px] ml-8 max-tablet:w-[475px] max-mobile:ml-5 max-mobile:text-4xl"
+          >
+            Download App For Exciting Deals
+          </h1>
+        </div>
+
+        <div
+          class="inline-block w-[609px] text-[14px] text-[#707070] self-end ml-[185px] mt-[15px] max-tablet:ml-[89px] max-tablet:w[449px] max-mobile:ml-12"
+        >
+          <p class="max-tablet:hidden">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est,
+            adipiscing cursus auctor eget sed phasellus senectus. Ut tellus
+            donec vestibulum tristique leo bibendum in a, tincidunt.
+          </p>
+
+          <!--  -->
+
+          <p
+            class="text-[14px] pb-5 hidden max-tablet:inline-flex max-tablet:visible max-mobile:pb-0"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est, <br />
+            adipiscing cursus auctor eget sed phasellus senectus. Ut tellus
+            <br />
+            donec vestibulum tristique leo bibendum in a, tincidunt.
+          </p>
+
+          <!-- Download Cards -->
+          <div class="flex pt-8 max-tablet:w-[370px]">
+            <!-- Google -->
+            <div
+              class="h-[49px] w-[178px] bg-black rounded-[10px] flex items justify-center items-center mr-4"
+            >
+              <div class="flex items-center">
+                <img
+                  class="h-[34px] pr-4"
+                  src="images/app-iocns/google-play-logo.png"
+                  alt="google-play-logo"
+                />
+
+                <div>
+                  <p class="text-xs text-white">GET IT ON</p>
+                  <p class="text-sm font-medium text-white">Google Play</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Apple -->
+            <div
+              class="h-[49px] w-[178px] bg-black rounded-[10px] flex items justify-center items-center"
+            >
+              <div class="flex items-center">
+                <img
+                  class="h-[34px] pr-4"
+                  src="images/app-iocns/apple-logo.png"
+                  alt="google-play-logo"
+                />
+
+                <div>
+                  <p class="text-xs text-white">Download On The</p>
+                  <p class="text-sm font-medium text-white">App Store</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="pr-24 max-mobile:p-0 max-mobile:pt-9 max-mobile:flex max-mobile:justify-center max-mobile:w-screen"
+      >
+        <div class="flex items-center">
+          <div
+            class="relative flex items-center max-mobile:justify-center max-mobile:left-9"
+          >
+            <!-- Grid -->
+            <div
+              class="-z-0 -left-80 absolute max-tablet:-left-32 max-mobile:-left-28"
+            >
+              <div>
+                <div
+                  class="grid gap-[61px] grid-cols-6 grid-rows-6 pb-[61px] max-mobile:pb-10 max-mobile:gap-10"
+                >
+                  <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+                  <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+                  <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+                  <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+                  <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+                  <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+                  <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+                  <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+                  <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+                  <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+                  <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+                  <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+                  <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+                  <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+                  <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+                  <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+                  <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+                  <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+                  <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+                  <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+                  <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+                  <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+                  <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+                  <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+                  <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+                  <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+                  <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+                  <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+                  <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+                  <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+                  <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+                  <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+                  <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+                  <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+                  <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+                  <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+                </div>
+
+                <div
+                  class="grid gap-[61px] grid-cols-6 grid-rows-6 max-mobile:gap-10"
+                >
+                  <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+                  <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+                  <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+                  <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+                  <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+                  <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+                  <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+                  <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+                  <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+                  <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+                  <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+                  <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+                  <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+                  <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+                  <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+                  <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+                  <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+                  <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+                  <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+                  <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+                  <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+                  <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+                  <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+                  <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+                  <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+                  <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+                  <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+                  <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+                  <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+                  <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+                  <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+                  <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+                  <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+                  <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+                  <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+                  <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+                </div>
+              </div>
+            </div>
+
+            <img
+              class="h-[960px] z-20 max-tablet:h-[800px] max-mobile:h-[500px] max-mobile:"
+              src="images/photos-mochups/iphone-mockup-vert.png"
+              alt="iphone-mockup-vert"
+            />
+
+            <img
+              class="w-[470px] absolute -left-64 bottom-28 -rotate-[75deg] z-10 max-tablet:w-[350px] max-tablet:-left-48 max-mobile:-left-32"
+              src="images/green-photos/whole-lettuce.png"
+              alt="whole-lettuce"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7th Section -->
+    <section
+      class="bg-[#FFF5EC] h-[946px] flex justify-center relative max-tablet:h-[580px] max-mobile:h-[421px]"
+      id="section-7"
+    >
+      <div>
+        <!-- Grid -->
+        <div class="absolute flex bottom-0 left-0 max-tablet:-left-60">
+          <div class="mr-[61px]">
+            <div class="grid gap-[61px] grid-cols-6 grid-rows-6 pb-[61px]">
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+            </div>
+
+            <div class="grid gap-[61px] grid-cols-6 grid-rows-6">
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="grid gap-[61px] grid-cols-6 grid-rows-6 pb-[61px]">
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+            </div>
+
+            <div class="grid gap-[61px] grid-cols-6 grid-rows-6">
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+              <div class="w-[7px] h-[7px] bg-slate-200 rounded-full"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <img
+        class="absolute -bottom-[35px] -left-[115px] h-[840px] max-tablet:h-[580px] max-tablet:bottom-0 max-tablet:-left-[190px] max-mobile:h-[358px] max-mobile:-left-40 max-mobile:-top-5"
+        src="images/green-photos/bottom-plant.png"
+        alt="plant"
+      />
+
+      <!--Content -->
+      <div class="flex z-50">
+        <div
+          class="flex items-center justify-items-center max-mobile:w-[434px] max-mobile:self-start"
+        >
+          <div class="justify-items-center max-mobile:items-center">
+            <h1
+              class="text-4xl text-[#2E266F] text-center mb-[30px] max-mobile:text-2xl max-mobile:mt-[30px]"
+            >
+              Get Notified<br />
+              About New Amazing Products
+            </h1>
+
+            <p
+              class="text-sm text-[#707070] mb-[60px] text-center max-tablet:mb-[30px]"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est,
+              adipiscing<br />
+              cursus auctor eget sed phasellus senectus.
+            </p>
+
+            <div class="max-mobile:flex max-mobile:justify-center">
+              <div
+                class="w-[544px] h-[90px] rounded-full bg-white flex items-center justify-between mb-[60px] shadow-2xl shadow[#FFEDDE] max-tablet:mb-[30px] max-mobile:w-[379px] max-mobile:h-[60px] max-mobile:w-"
+              >
+                <div>
+                  <input
+                    class="text-[24px] pl-[60px] w-[450px] h-20 rounded-full outline-none max-mobile:w-[290px] max-mobile:h-[60px] max-mobile:text-base max-mobile:pl-8"
+                    type="text"
+                    placeholder="Email"
+                  />
+                </div>
+                <button
+                  class="w-[56px] h-[56px] bg-[#FE043C] rounded-full font-semibold text-[30px] text-white mr-5 flex justify-center items-center hover:bg-[#2E266F] duration-1000 max-mobile:w-[40px] max-mobile:h-[40px] max-mobile:mr-2"
+                >
+                  <img
+                    class="w-10"
+                    src="images/nav-icon/right-arrow.png"
+                    alt=""
+                  />
+                </button>
+              </div>
+            </div>
+
+            <div
+              class="flex text-base text-[#707070] items-center justify-around max-mobile:text-sm"
+            >
+              <button class="hover:text-[#FE043C] duration-700">Product</button>
+              <button class="hover:text-[#FE043C] duration-700">Company</button>
+              <button class="hover:text-[#FE043C] duration-700">
+                Learn More
+              </button>
+              <button class="hover:text-[#FE043C] duration-700">
+                Get In Touch
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="absolute bottom-[70px] right-[70px] flex justify-between items-center max-tablet:bottom-[50px] max-tablet:right-[50px] max-mobile:inset-x-auto max-mobile:self-end max-mobile:bottom-10"
+      >
+        <div
+          class="w-40 flex justify-between items-center mr-10 max-tablet:w-32 max-tablet:mr-8"
+        >
+          <button>
+            <img
+              class="h-8 max-tablet:h-6"
+              src="images/footer-icons/facebook-icon.png"
+              alt="facebook-icon"
+            />
+          </button>
+          <button>
+            <img
+              class="h-8 max-tablet:h-6"
+              src="images/footer-icons/twitter-icon.png"
+              alt="facebook-icon"
+            />
+          </button>
+          <button>
+            <img
+              class="h-8 max-tablet:h-6"
+              src="images/footer-icons/linkedin-icon.png"
+              alt="facebook-icon"
+            />
+          </button>
+          <button>
+            <img
+              class="h-8 max-tablet:h-6"
+              src="images/footer-icons/behance-icon.png"
+              alt="facebook-icon"
+            />
+          </button>
+        </div>
+        <div><p class="text-sm">© 2022 Expice Studio</p></div>
+      </div>
+    </section>
+
+    <script src="main.js"></script>
+  </body>
+</html>
